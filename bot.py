@@ -22,7 +22,7 @@ async def start(update: Update, context: CallbackContext):
     try:
         await update.message.reply_text(
             "Raspberry Pi-based Telegram bot is running!\n"
-            "Type /led_on, /led_off, /temp, /humidity, /sensors"
+            "Type /led_on, /led_off, /temp, /humidity"
         )
     except Exception as e:
         logger.error(f"Error in /start command: {e}")
